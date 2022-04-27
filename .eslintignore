@@ -1,0 +1,4 @@
+types
+dist
+node_modules
+packages/icon-vue/src/icons/*.vue

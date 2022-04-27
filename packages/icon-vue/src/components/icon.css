@@ -1,0 +1,23 @@
+:root {
+  font-size: 30px;
+  --icon-size: 1.2em;
+  --icon-color: inherit;
+}
+
+.b-icon {
+  display: inline-block;
+  line-height: 0;
+  color: inherit;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  vertical-align: -0.15em;
+  color: var(--icon-color);
+}
+
+.bc-icon-svg {
+  display: inline-block;
+  height: var(--icon-size);
+  width: var(--icon-size);
+  fill: currentColor;
+  overflow: hidden;
+}
