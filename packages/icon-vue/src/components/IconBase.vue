@@ -1,7 +1,7 @@
 <template>
   <span
-    class="b-icon"
-    :class="classNames"
+    class="pop-icon"
+    :class="className"
     :style="rootStyle"
   >
     <!--slot-->
@@ -16,7 +16,7 @@ const props = defineProps<{
   /** 图标颜色 */
   color?: string
   /** 类名 */
-  class?: string
+  className?: string
 }>()
-const { classNames, rootStyle } = useRunTime(props)
+const { rootStyle } = useRunTime(props)
 </script>

@@ -25,7 +25,7 @@ const zip = entry => {
       {
         name: 'addClassesToSVGElement',
         params: {
-          classNames: ['bc-icon-svg'],
+          classNames: ['pop-icon-svg'],
         },
       },
       // 添加属性到svg元素

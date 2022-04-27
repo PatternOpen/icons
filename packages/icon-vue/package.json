@@ -4,22 +4,29 @@
   "description": "",
   "scripts": {
     "generate": "node ./scripts/generate.js",
-    "build": "node ./scripts/build.js && vue-tsc --declaration --emitDeclarationOnly"
+    "build:dts": "vue-tsc --declaration --emitDeclarationOnly",
+    "build": "node ./scripts/build.js && npm run build:dts"
   },
-  "files": ["dist", "types"],
+  "files": [
+    "dist",
+    "types"
+  ],
   "types": "types/src/index.d.ts",
   "module": "dist/index.js",
   "buildFlag": true,
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/types": "^7.17.0",
+    "@vue/compiler-sfc": "^3.2.33",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
+    "i": "^0.3.7",
     "rollup": "^2.70.2",
+    "rollup-plugin-import-css": "^3.0.3",
     "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.31.2",
     "rollup-plugin-vue": "^6.0.0",
+    "typescript": "^4.6.3",
     "vue": "^3.2.33",
     "vue-tsc": "^0.34.10"
   },
@@ -27,6 +34,6 @@
     "vue": "^3.2.33"
   },
   "dependencies": {
-    "build": "^0.1.4"
+    "icon-svg": "link:../icon-svg"
   }
 }

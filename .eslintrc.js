@@ -1,21 +1,23 @@
 module.exports = {
-  extends: ['@mario34/eslint-config-base'],
-  rules: {
-    'global-require': 'off',
-  },
   overrides: [
     {
-      files: ['packages/icon-vue/**/*.vue'],
+      files: ['./packages/icon-vue/**/*.vue'],
       extends: ['@mario34/eslint-config-vue3'],
     },
     {
-      files: ['packages/*.ts'],
+      files: ['./packages/icon-react/**/*.tsx'],
+      extends: ['@mario34/eslint-config-react'],
+    },
+    {
+      files: ['./packages/**/*.ts'],
       extends: ['@mario34/eslint-config-ts'],
     },
     {
-      files: ['./scripts/**/*.js'],
+      files: ['**/*.js'],
+      extends: ['@mario34/eslint-config-base'],
       rules: {
         'no-console': 'off',
+        'global-require': 'off',
       },
     },
   ],

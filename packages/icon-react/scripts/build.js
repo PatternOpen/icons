@@ -1,26 +1,24 @@
 const rollup = require('rollup')
 const path = require('path')
-const vue = require('rollup-plugin-vue')
 const typescript = require('rollup-plugin-typescript2')
-const { terser } = require('rollup-plugin-terser')
 const css = require('rollup-plugin-import-css')
+const { terser } = require('rollup-plugin-terser')
 const root = path.resolve(__dirname, '..')
 
 const main = async () => {
   const bundle = await rollup.rollup({
     input: path.join(root, './src/index.ts'),
-    external: ['vue'],
+    external: ['react'],
     plugins: [
-      css({ output: 'index.css', minify: true }),
-      vue(),
       terser(),
+      css(),
       typescript({
         clean: true,
         check: false,
         tsconfig: path.resolve(root, 'tsconfig.json'),
         tsconfigOverride: {
           compilerOptions: {
-            declaration: false,
+            declaration: true,
             rootDir: root,
           },
           include: [
