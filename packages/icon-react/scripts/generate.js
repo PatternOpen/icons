@@ -13,7 +13,7 @@ const main = async () => {
   let entriesStr = ''
   for (let i = 0; i < icons.length; i++) {
     const [name, svgStr] = icons[i]
-    fs.writeFile(path.join(iconsDir, `${name}.tsx`), template.replace('{/* <!--slot--> */}', svgStr).replace('class="bc-icon-svg"', 'className="bc-icon-svg"'), 'utf-8')
+    fs.writeFile(path.join(iconsDir, `${name}.tsx`), template.replace('{/* <!--slot--> */}', svgStr).replace('class="pop-icon-svg"', 'className="pop-icon-svg"'), 'utf-8')
     entriesStr += `export { default as ${name} } from './icons/${name}'\n`
   }
   entriesStr += 'import \'./components/icon.css\'\n'

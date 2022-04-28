@@ -1,0 +1,8 @@
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+body {
+  min-width: 1200px;
+}

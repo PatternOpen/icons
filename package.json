@@ -2,9 +2,7 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "node scripts/build.js",
-    "create:pkg": "node scripts/create.js",
-    "clean": "node scripts/clean.js",
+    "build:all": "bash ./scripts/build-all.sh",
     "generate:icons": "node scripts/generate-icons.js"
   },
   "engines": {
