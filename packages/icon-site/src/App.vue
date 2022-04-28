@@ -1,26 +1,36 @@
 <script setup lang="ts">
 import * as icons from '@scope/icon-svg'
-import { GithubLogo } from '@scope/icon-vue'
+import { GithubLogo, Bluetooth } from '@scope/icon-vue'
 import IconCard from '@/components/IconCard.vue'
 </script>
 
 <template>
   <header class="header">
     <div class="app-container">
-      <div class="right">
+      <div class="left">
         <a href="https://github.com/PatternOpen">
           <img
             class="logo"
             src="favicon.png"
           >
         </a>
+        <div>
+          Powered By
+          <a
+            style="font-weight: 800"
+            href="https://github.com/PatternOpen/icons"
+          >PatternOpen/icons</a>
+        </div>
       </div>
-      <a
-        class="right"
-        href="https://github.com/PatternOpen/icons"
-      >
-        <GithubLogo color="#343434" />
-      </a>
+      <div class="right">
+        <a href="https://github.com/PatternOpen/icons/blob/main/README.md"> Document </a>
+        <a href="https://github.com/PatternOpen/icons">
+          <GithubLogo
+            color="#343434"
+            :size="30"
+          />
+        </a>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -47,7 +57,13 @@ import IconCard from '@/components/IconCard.vue'
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #343434;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+a {
+  color: #349;
+  font-weight: 500;
+  text-decoration: none;
 }
 </style>
 
@@ -65,13 +81,35 @@ import IconCard from '@/components/IconCard.vue'
   justify-content: space-between;
 }
 
+.header .left {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 .header .logo {
   height: 40px;
   width: 40px;
+  margin-right: 12px;
+}
+
+.header .right {
+  display: flex;
+  align-items: center;
+}
+
+.header .right a {
+  margin-left: 12px;
+}
+
+.header .right a + a {
+  margin-left: 24px;
 }
 
 .main {
   height: calc(100vh - 60px);
+  background-color: #f9f9f9;
 }
 
 .main .app-container {

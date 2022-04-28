@@ -65,9 +65,9 @@ const onCopyName = () => {
   background-color: #fff;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  border: 1px solid #ececec;
   height: 60px;
-  border-radius: 2px;
+  border-radius: 4px;
   position: relative;
 }
 
