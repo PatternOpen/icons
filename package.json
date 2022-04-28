@@ -2,10 +2,11 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "build": "node scripts/build.js",
-    "create:pkg": "node scripts/create.js",
-    "clean": "node scripts/clean.js",
-    "generate:icons": "node scripts/generate-icons.js"
+    "generate:all": "bash ./scripts/generate-all.sh",
+    "build:all": "bash ./scripts/build-all.sh",
+    "generate:icons": "node scripts/generate-icons.js",
+    "dev": "pnpm -F icon-site dev",
+    "build:site": "pnpm -F icon-site build"
   },
   "engines": {
     "node": ">=16.5.0"

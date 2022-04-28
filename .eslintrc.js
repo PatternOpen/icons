@@ -5,6 +5,10 @@ module.exports = {
       extends: ['@mario34/eslint-config-vue3'],
     },
     {
+      files: ['./packages/icon-site/**/*.vue'],
+      extends: ['@mario34/eslint-config-vue3'],
+    },
+    {
       files: ['./packages/icon-react/**/*.tsx'],
       extends: ['@mario34/eslint-config-react'],
     },

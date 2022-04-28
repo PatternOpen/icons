@@ -1,0 +1,22 @@
+<template>
+  <span
+    class="pop-icon"
+    :class="className"
+    :style="rootStyle"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="pop-icon-svg" fill="currentColor"><path fill-rule="evenodd" d="M3.5 2.75a.75.75 0 0 0-.75.75v17c0 .414.336.75.75.75h17a.75.75 0 0 0 .75-.75v-17a.75.75 0 0 0-.75-.75h-17Zm-2.25.75A2.25 2.25 0 0 1 3.5 1.25h17a2.25 2.25 0 0 1 2.25 2.25v17a2.25 2.25 0 0 1-2.25 2.25h-17a2.25 2.25 0 0 1-2.25-2.25v-17Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M1.25 8.667a.75.75 0 0 1 .75-.75h20a.75.75 0 0 1 0 1.5H2a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M8.667 7.917a.75.75 0 0 1 .75.75V22a.75.75 0 0 1-1.5 0V8.667a.75.75 0 0 1 .75-.75Z" clip-rule="evenodd"/></svg>
+  </span>
+</template>
+
+<script setup lang="ts">
+import { useRunTime } from '../core'
+const props = defineProps<{
+  /** css尺寸单位字符串 或 以px为单位的数字 */
+  size?: string | number
+  /** 图标颜色 */
+  color?: string
+  /** 类名 */
+  className?: string
+}>()
+const { rootStyle } = useRunTime(props)
+</script>

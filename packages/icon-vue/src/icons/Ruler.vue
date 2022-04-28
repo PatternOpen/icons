@@ -1,0 +1,22 @@
+<template>
+  <span
+    class="pop-icon"
+    :class="className"
+    :style="rootStyle"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="pop-icon-svg" fill="currentColor"><path fill-rule="evenodd" d="M16.47 1.47a.75.75 0 0 1 1.06 0l5 5a.75.75 0 0 1 0 1.06l-15 15a.75.75 0 0 1-1.06 0l-5-5a.75.75 0 0 1 0-1.06l15-15ZM17 3.06 3.06 17 7 20.94 20.94 7 17 3.06Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M15.655 3.345a.75.75 0 0 1 0 1.06l-11.25 11.25a.75.75 0 0 1-1.06-1.06l11.25-11.25a.75.75 0 0 1 1.06 0Z" clip-rule="evenodd"/><path fill-rule="evenodd" d="M3.97 13.97a.75.75 0 0 1 1.06 0l2 2a.75.75 0 1 1-1.06 1.06l-2-2a.75.75 0 0 1 0-1.06Zm2.5-2.5a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06l-3-3a.75.75 0 0 1 0-1.06Zm2.5-2.5a.75.75 0 0 1 1.06 0l2 2a.75.75 0 1 1-1.06 1.06l-2-2a.75.75 0 0 1 0-1.06Zm2.5-2.5a.75.75 0 0 1 1.06 0l3 3a.75.75 0 1 1-1.06 1.06l-3-3a.75.75 0 0 1 0-1.06Zm2.5-2.5a.75.75 0 0 1 1.06 0l2 2a.75.75 0 0 1-1.06 1.06l-2-2a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/></svg>
+  </span>
+</template>
+
+<script setup lang="ts">
+import { useRunTime } from '../core'
+const props = defineProps<{
+  /** css尺寸单位字符串 或 以px为单位的数字 */
+  size?: string | number
+  /** 图标颜色 */
+  color?: string
+  /** 类名 */
+  className?: string
+}>()
+const { rootStyle } = useRunTime(props)
+</script>

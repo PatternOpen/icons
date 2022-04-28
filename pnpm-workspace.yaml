@@ -1,4 +1,2 @@
 packages:
-  - 'packages/icon-vue'
-  - 'packages/icon-svg'
-  - 'packages/icon-react'
+  - 'packages/*'
