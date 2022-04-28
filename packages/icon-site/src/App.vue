@@ -8,12 +8,6 @@ import IconCard from '@/components/IconCard.vue'
   <header class="header">
     <div class="app-container">
       <div class="left">
-        <a href="https://github.com/PatternOpen">
-          <img
-            class="logo"
-            src="favicon.png"
-          >
-        </a>
         <div>
           Powered By
           <a
