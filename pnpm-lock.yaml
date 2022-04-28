@@ -86,8 +86,6 @@ importers:
       '@vue/compiler-sfc': ^3.2.33
       fast-glob: ^3.2.11
       fs-extra: ^10.1.0
-      i: ^0.3.7
-      icon-svg: link:../icon-svg
       rollup: ^2.70.2
       rollup-plugin-import-css: ^3.0.3
       rollup-plugin-terser: ^7.0.2
@@ -96,14 +94,11 @@ importers:
       typescript: ^4.6.3
       vue: ^3.2.33
       vue-tsc: ^0.34.10
-    dependencies:
-      icon-svg: link:../icon-svg
     devDependencies:
       '@babel/types': 7.17.0
       '@vue/compiler-sfc': 3.2.33
       fast-glob: 3.2.11
       fs-extra: 10.1.0
-      i: 0.3.7
       rollup: 2.70.2
       rollup-plugin-import-css: 3.0.3_rollup@2.70.2
       rollup-plugin-terser: 7.0.2_rollup@2.70.2
@@ -2099,11 +2094,6 @@ packages:
     resolution: {integrity: sha1-xG4xWaKT9riW2ikxbYtv6Lt5u+0=}
     dependencies:
       ms: 2.1.3
-    dev: true
-
-  /i/0.3.7:
-    resolution: {integrity: sha512-FYz4wlXgkQwIPqhzC5TdNMLSE5+GS1IIDJZY/1ZiEPCT2S3COUVZeT5OW4BmW4r5LHLQuOosSwsvnroG9GR59Q==}
-    engines: {node: '>=0.4'}
     dev: true
 
   /iconv-lite/0.4.24:

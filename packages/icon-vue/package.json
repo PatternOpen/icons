@@ -20,7 +20,6 @@
     "@vue/compiler-sfc": "^3.2.33",
     "fast-glob": "^3.2.11",
     "fs-extra": "^10.1.0",
-    "i": "^0.3.7",
     "rollup": "^2.70.2",
     "rollup-plugin-import-css": "^3.0.3",
     "rollup-plugin-terser": "^7.0.2",
@@ -32,8 +31,5 @@
   },
   "peerDependencies": {
     "vue": "^3.2.33"
-  },
-  "dependencies": {
-    "icon-svg": "link:../icon-svg"
   }
 }
