@@ -3,3 +3,4 @@ dist
 node_modules
 packages/icon-vue/src/icons/*.vue
 packages/icon-react/src/icons/*.tsx
+packages/icon-svg/src/index.ts
