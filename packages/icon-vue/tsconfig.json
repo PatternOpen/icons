@@ -17,6 +17,7 @@
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
     "rootDir": ".",
+    "types": [],
   },
-  "include": ["src/**/*.ts"]
+  "include": ["src/**/*.ts", "src/**/*.vue"]
 }
