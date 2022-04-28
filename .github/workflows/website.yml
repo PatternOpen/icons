@@ -4,7 +4,7 @@ name: website deploy
 on:
   push:
     branches:
-      - dev
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -25,8 +25,9 @@ jobs:
       - name: Install and Build 🔧
         run: |
           pnpm i
+          pnpm generate:all
           pnpm build:all
-          pnpm -F icon-site build
+          pnpm build:site
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
