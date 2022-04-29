@@ -6,10 +6,10 @@ importers:
     specifiers:
       '@changesets/changelog-github': ^0.4.4
       '@changesets/cli': ^2.22.0
-      '@mario34/eslint-config-base': ^0.3.0
-      '@mario34/eslint-config-react': ^0.3.0
-      '@mario34/eslint-config-ts': ^0.3.1
-      '@mario34/eslint-config-vue3': ^0.3.1
+      '@mario34/eslint-config-base': ^1.0.0
+      '@mario34/eslint-config-react': ^1.0.0
+      '@mario34/eslint-config-ts': ^1.0.0
+      '@mario34/eslint-config-vue3': ^1.0.0
       '@types/node': ^17.0.23
       chalk: ^4.1.2
       change-case: ^4.1.2
@@ -23,10 +23,10 @@ importers:
     devDependencies:
       '@changesets/changelog-github': 0.4.4
       '@changesets/cli': 2.22.0
-      '@mario34/eslint-config-base': 0.3.0_eslint@8.14.0
-      '@mario34/eslint-config-react': 0.3.0_eslint@8.14.0+typescript@4.6.3
-      '@mario34/eslint-config-ts': 0.3.1_eslint@8.14.0+typescript@4.6.3
-      '@mario34/eslint-config-vue3': 0.3.1_eslint@8.14.0+typescript@4.6.3
+      '@mario34/eslint-config-base': 1.0.0_eslint@8.14.0
+      '@mario34/eslint-config-react': 1.0.0_eslint@8.14.0+typescript@4.6.3
+      '@mario34/eslint-config-ts': 1.0.0_eslint@8.14.0+typescript@4.6.3
+      '@mario34/eslint-config-vue3': 1.0.0_eslint@8.14.0+typescript@4.6.3
       '@types/node': 17.0.23
       chalk: 4.1.2
       change-case: 4.1.2
@@ -433,8 +433,8 @@ packages:
       read-yaml-file: 1.1.0
     dev: true
 
-  /@mario34/eslint-config-base/0.3.0_eslint@8.14.0:
-    resolution: {integrity: sha512-bj7lIdJtyp9VEOg+UamBqIlt0KjDpdUSfIw1H1WlJrb1rL0Y/CMxI785PuiRyrcBc8V/Q8daEaGCbb+V1nbJTg==}
+  /@mario34/eslint-config-base/1.0.0_eslint@8.14.0:
+    resolution: {integrity: sha512-VR0zySVuM13ijCg/LmR1LSrrHAl3Iu+5AlFKM/P5Hxb3ymrEuCbiOvP+qJmhMuTf9WC3/Lyo1bhtd58ymzTPJg==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
@@ -442,12 +442,12 @@ packages:
       eslint: 8.14.0
     dev: true
 
-  /@mario34/eslint-config-react/0.3.0_eslint@8.14.0+typescript@4.6.3:
-    resolution: {integrity: sha512-xNsbEXqvgzEDrVR8f/eQBDzGYPKGHAB1384yGswojx182IgPWfWMxb2dtNAY7QLVds4AqgEwok0qCJt59914aw==}
+  /@mario34/eslint-config-react/1.0.0_eslint@8.14.0+typescript@4.6.3:
+    resolution: {integrity: sha512-YQho52YsX+O8tgBr4ctnZ+T5/m4v1VlBX+aa47/9ZK4VQCOiR9BWV9FXXCE45EB6O82P9AOqPjLInx26gbPBTg==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@mario34/eslint-config-ts': 0.3.1_eslint@8.14.0+typescript@4.6.3
+      '@mario34/eslint-config-ts': 1.0.0_eslint@8.14.0+typescript@4.6.3
       eslint: 8.14.0
       eslint-plugin-react: 7.29.4_eslint@8.14.0
     transitivePeerDependencies:
@@ -455,13 +455,13 @@ packages:
       - typescript
     dev: true
 
-  /@mario34/eslint-config-ts/0.3.1_eslint@8.14.0+typescript@4.6.3:
-    resolution: {integrity: sha512-801f6sjXEwYpXDFyiWBSoFtgAp+gNpMzyRHoApDeGabTSOVQk6a6330+gDVnexWFVBcBbX0FB6/8YxhgRMWjkA==}
+  /@mario34/eslint-config-ts/1.0.0_eslint@8.14.0+typescript@4.6.3:
+    resolution: {integrity: sha512-t+TEseNvJNIVkYJ9CVIv6NkWk5d/vwJ/y/+AK/qrLfKPado91+/Y87T6WYO9sZiiGzDciHFxcsdjki5v6jymcQ==}
     peerDependencies:
       eslint: '>=7.4.0'
       typescript: '>=3.9'
     dependencies:
-      '@mario34/eslint-config-base': 0.3.0_eslint@8.14.0
+      '@mario34/eslint-config-base': 1.0.0_eslint@8.14.0
       '@typescript-eslint/eslint-plugin': 5.20.0_81f0d1a74f014d44d273bd1612c85fd9
       '@typescript-eslint/parser': 5.20.0_eslint@8.14.0+typescript@4.6.3
       eslint: 8.14.0
@@ -470,12 +470,12 @@ packages:
       - supports-color
     dev: true
 
-  /@mario34/eslint-config-vue3/0.3.1_eslint@8.14.0+typescript@4.6.3:
-    resolution: {integrity: sha512-S+UNIMRUd3bvHxJY8XtjqZtRsPZL9a7uXTMt6Ys14UjDec5XJ59OYPDl6phf47vzt0jb6lcQcToh3ta8D46IAw==}
+  /@mario34/eslint-config-vue3/1.0.0_eslint@8.14.0+typescript@4.6.3:
+    resolution: {integrity: sha512-uPFt97a5Mr3HbP9rU9N2LR9Ofvb4VxvZfTQIvBPkcHxVTvrHZqG//1XPLbPhQhBe8mFZ890VuZ3hQ5HzgDywmA==}
     peerDependencies:
       eslint: '>=7.4.0'
     dependencies:
-      '@mario34/eslint-config-ts': 0.3.1_eslint@8.14.0+typescript@4.6.3
+      '@mario34/eslint-config-ts': 1.0.0_eslint@8.14.0+typescript@4.6.3
       '@rushstack/eslint-patch': 1.1.3
       '@vue/eslint-config-typescript': 10.0.0_f5d04023b0e9c1203fb3ac493367e3ca
       eslint: 8.14.0
