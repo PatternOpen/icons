@@ -10,6 +10,8 @@
 
 - 执行 `pnpm generate:all`，生成个各平台代码
 
+- 执行 `pnpm build:all`，打包所有子模块
+
 - 执行 `pnpm dev`，生成本地开发环境预览
 
 - 确认没有问题后，提交本次变更
